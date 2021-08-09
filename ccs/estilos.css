@@ -1,0 +1,145 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;/*Función para ya no hacer cuentas y que el main vala 700 con todo y su padding*/
+	-moz-box-sizing:border-box;/*Y para que el aside valga 300 con todo y su padding*/
+	box-sizing:border-box;
+}
+
+body{
+	font-family:Arial,Sans-serif;
+	font-size:16px;
+	background:#4a465b;
+}
+
+.contenedor{/*Contenedor padre de aside*/
+	width:90%;
+	max-width:1000px;/*Limitamos el ancho máximo de la pág*/
+	margin:20px auto;/*Ponemos auto para centrar todo el contenido de la pág web*/
+	overflow:hidden;/*Para eliminar el error del float left*/
+	/*Se escogió especificamente esta clase porque es la clase padre de donde */
+	/*se originó el error, es decir la clase padre de aside*/
+}
+
+header {
+	background:#fff;
+}
+
+header nav ul{/*ul=contenedor padre de loselementos li*/
+	width:100%;
+	overflow:hidden;/*Aqui se arregla el error del float: left*/
+	list-style:none;
+}
+
+header nav ul li{
+	float: left;/*También se puede usar el float left*/
+	/*display:inline-block;*//*O también display´*/
+}
+
+header nav ul li a{
+	text-decoration:none;
+	display:inline-block;
+	padding:15px 20px;
+	color:#000;
+}
+
+header nav ul li a:hover{
+	background:#000;
+	color:#fff;
+}
+
+.main{
+	width:70%;
+	background:#fff;
+	float:left;/*Para que suba el aside*//*Porque aquí ponemos esto?*/
+	/*se relaciona aside y main porque aside se va a recolocar dentro del main*/
+}
+
+.main .imagen{
+	width:100%;/*La div<> con clase imágen ocupará el 100% del tamaño de la section<> class con clase main*/
+}
+
+.main .imagen img{
+	width:100%;/*La imágen como tal ocupará el 100% del tamaño de La div<> con clase imágen*/
+	vertical-align:top;/*Quitar el margen de la parte superior e inferior de la imágen*/
+}
+
+.main .posts {
+	padding:40px;
+}
+
+.main .posts article h2{
+	margin-bottom:20px;/*Margin hacia abajo del título del artículo hacia el texto o <p>*/
+	color:#424242;
+}
+
+.main .posts article p{
+	margin-bottom:15px;/*Distancia entre párrafo y párrafo*/
+	line-height:27px;/*Distancia entre línea y lénea de párrafo*/
+}
+
+aside{
+	width:30%;
+	background: #161f26;
+	padding:20px;
+	color:#fff;
+	float:left;/*Para que suba el aside*/
+}
+
+aside .widget{
+	margin-bottom:20px;
+}
+
+aside .widget .título{
+	color:#ff8000;
+	border-bottom:10px solid #ff8000;/*La línea naranja que separa las secciones*/
+	margin-bottom:10px;
+}
+
+aside .widget ul{
+	list-style: none;/*Le quitamos los estilos a la lista*/
+}
+
+aside .widget ul li{
+	border-bottom:1px solid rgba(255,255,255,0.2);/*Margen*/
+}
+
+aside .widget ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+
+aside .widget ul li a:hover{
+	color: #8f8f8f;
+}
+
+aside .widget p{
+	line-height:27px;/*Distancia entre línea y línea de párrafo*/
+}
+
+footer{
+	width:70%;
+	overflow:hidden;/*para resolver el problema de que no baja el footer*/
+	/*clear:both;*//*También se puede utilizar para resolver el problema de que no baja el footer*/
+	background:#000;
+	color:#fff;
+	padding:15px 0;
+	text-align:center;
+}
+
+@media screen and (max-width:800px){/*Cuando estés en pantalla y tengas un ancho máximo de 800px o menos*/
+/*Ejecuta lo que sigue*/
+/*@media screen and (mix-width:800px) es lo mismo pero de 800 al máximo tamaño*/
+	.main{
+		width:100%;
+		font-size:12px;
+	}
+	
+	aside{
+		width:100%;
+	}
+	
+	footer{
+		width:100%;
+	}
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es"><!--Para que idetifiquen mi sitio en español-->
+ <head>
+    <title>Layout básica</title>
+	<link rel="stylesheet" href="ccs/main.css">
+	<meta charset="utf-8"><!--Para que el navegador detecte los acentos y demás caracteres-->
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+ </head>
+ <body>
+ 
+	<div class="contenedor"><!--Est es el contenedor padre del <aside>, se necesitaa saber esto para arreglar el problema del float left de aside-->
+		<header>
+			<nav><!--Menú de navegación-->
+				<ul><!--Lista-->
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Acerca de</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Contactos</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class="main">
+			<div class="imagen">
+				<img src="imagenes/panama.png" alt="Calle de Panamá">
+			</div>
+			<section class="posts">
+				<article>
+					<h2>Título de Artículo</h2>
+					<p> Pero además la marihuana contiene otra sustancia llamada 
+					canabidiol o CBD, que cuando llega al cerebro hace aumentar los 
+					niveles de otro neurotransmisor endógeno llamado 2-AG, que se ocupa
+					de la regulación del apetito (de ahí el hambre que dan los porros),
+					y mucho más importante, el sistema inmunitario y la regulación del
+					dolor. El THC es psicotrópico, y es la parte del cannabis que te
+					proporciona los efectos “recreativos”. El CBD no produce estos
+					efectos, pero sí afecta al las funciones del cerebro y a la salud 
+					en general, en muchos casos de forma beneficiosa.</p>
+				
+					<p> Pero además la marihuana contiene otra sustancia llamada 
+					canabidiol o CBD, que cuando llega al cerebro hace aumentar los 
+					niveles de otro neurotransmisor endógeno llamado 2-AG, que se ocupa
+					de la regulación del apetito (de ahí el hambre que dan los porros),
+					y mucho más importante, el sistema inmunitario y la regulación del
+					dolor. El THC es psicotrópico, y es la parte del cannabis que te
+					proporciona los efectos “recreativos”. El CBD no produce estos
+					efectos, pero sí afecta al las funciones del cerebro y a la salud 
+					en general, en muchos casos de forma beneficiosa.</p>
+				</article>
+			</section>	
+		</section>
+		
+		
+		<aside>
+				<div class="widget">
+					<h3 class="título">Articulos Destacados</h3>
+					<ul>
+						<li><a href="#">Artículo destacado 1</a></li>
+						<li><a href="#">Artículo destacado 2</a></li>
+						<li><a href="#">Artículo destacado 3</a></li>
+						<li><a href="#">Artículo destacado 4</a></li>
+						<li><a href="#">Artículo destacado 5</a></li>
+					</ul>
+				</div>
+				
+				<div class="widget">
+					<h3 class="título">Información</h3>
+					<p> Pero además la marihuana contiene otra sustancia llamada 
+					canabidiol o CBD, que cuando llega al cerebro hace aumentar los 
+					niveles de otro neurotransmisor endógeno llamado 2-AG, que se ocupa
+					de la regulación del apetito (de ahí el hambre que dan los porros),
+					y mucho más importante, el sistema inmunitario y la regulación del
+					dolor. El THC es psicotrópico, y es la parte del cannabis que te
+					proporciona los efectos “recreativos”. El CBD no produce estos
+					efectos, pero sí afecta al las funciones del cerebro y a la salud 
+					en general, en muchos casos de forma beneficiosa.</p>
+				</div>
+		</aside>
+		
+		
+		<footer>
+			<p>La Fuente 2020 - Todos los Derechos Reservados</p>
+		</footer>
+	</div>
+ 
+ </body>
+</html>
